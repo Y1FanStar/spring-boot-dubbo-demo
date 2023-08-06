@@ -1,5 +1,11 @@
-package org.apache.dubbo.springboot.demo;/**
-  *@author hjx
-  *@date 2023/8/6 16:15
-  */public interface DemoService {
+package org.apache.dubbo.springboot.demo;
+
+
+public interface DemoService {
+    /**
+     * sayHi
+     * @param name
+     * @return
+     */
+    String sayHello(String name);
 }

@@ -1,9 +1,11 @@
 server:
-  port: 8333
+  port: 8330
 
 spring:
   dubbo:
     application:
-      name: dubbo-provider
-    registry:
-      zookeeper: http://127.0.0.1:2181
+      name: dubbo-consumer
+    protocol:
+      name: dubbo
+      port: -1
+    registry: zookeeper://127.0.0.1:2181

@@ -1,4 +1,4 @@
-package org.apache.dubbo.springboot.demo.provider.controller;
+package org.apache.dubbo.springboot.demo.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.apache.dubbo.springboot.demo.DemoService;
@@ -18,8 +18,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello() {
         String hello = demoService.sayHello("world");
-        System.out.println(demoService.sayHello("fengx"));
+        System.out.println(demoService.sayHello("dubbo"));
         return hello;
     }
-
 }
